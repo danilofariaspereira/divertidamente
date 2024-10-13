@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh; /*ocupa 100% da tela*/
+    box-sizing: border-box; /* faz com que  nada autrapasse o body*/
+    background-color: black;
+    color: #ece2e2;
+
+}
+strong{
+    color: rgb(9, 128, 233);
+}
+
+.apresentacao{
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*esparo cada elemento filho*/
+}
+.apresentacao-conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;  /* alinha os elementos em coluna */
+    gap: 40px; /*espassamento entre os elementos filhos */
+}
+.apresentacao-conteudo-titulo{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+.apresentacao-conteudo-texto{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+.apresentacao-links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.links-subtitulo{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid rgb(233, 226, 9) ;
+    width: 378px;
+    text-align:center ; /* alinhamento do texto */
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none ;/* sem nem uma decoraçao pra tirar aquela linha debaixo dos link */
+    color:rgb(210, 30, 141) ;
+    font-family: "Montserrat", sans-serif;
+}
+
+.photo{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+}
